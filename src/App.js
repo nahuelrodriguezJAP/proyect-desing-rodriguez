@@ -7,8 +7,9 @@ import ItemListContainer from './container/ItemListContainer';
 function App() {
   return (
     <div className="App">
-     <NavBar/>
-     <ItemListContainer nombre='nombre'/>
+     <NavBar/><div class="container">
+     <ItemListContainer nombre='Vengo desde App.js'/>
+     </div>
     </div>
   );
 }

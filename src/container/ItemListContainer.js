@@ -1,10 +1,11 @@
+import ItemCount from "./ItemCount"
 
-// import ItemCard from './ItemCard'
 const ItemListContainer = ({ nombre }) => {
-
+  
   return (
-    <div>
-      TITULO DE ITEM= {nombre}
+    <div class="row justify-content-center">
+      TITULO DE ITEM= {nombre}<br/>
+      <ItemCount stock= {10} inicial={1}/>
     </div>
   )
 }
