@@ -18,7 +18,7 @@ const ItemCount = ({stock, inicial}) => {
 
     }
     return (
-        <div>
+        <div class="col-5 align-self-center">
             {count}
             <button class='btn btn-dark' onClick={aumentar}>+</button>
             <button class='btn btn-dark' onClick={disminuir}>-  </button><br/>
