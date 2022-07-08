@@ -4,7 +4,9 @@ const ItemListContainer = ({ nombre }) => {
   
   return (
     <div class="row justify-content-center">
-      TITULO DE ITEM= {nombre}<br/>
+    <div class="col-12 align-self-center">
+      TITULO DE ITEM= {nombre}</div><br/><br/>
+      
       <ItemCount stock= {10} inicial={1}/>
     </div>
   )
