@@ -1,7 +1,7 @@
 import './App.css';
-import NavBar from './components/NavBar';
+import NavBar from '../src/components/NavBar/NavBar';
 import React from 'react';
-import ItemListContainer from './container/ItemListContainer';
+import ItemListContainer from '../src/components/ItemList/ItemListContainer';
 // import ItemCard from './container/ItemCard'
 
 function App() {

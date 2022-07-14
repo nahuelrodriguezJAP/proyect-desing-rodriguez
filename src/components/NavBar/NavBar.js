@@ -1,6 +1,6 @@
 import React from "react"
-import CartWidget from "./CartWidget"
-import Menu from "./Menu"
+import CartWidget from "../Cart/CartWidget"
+import Menu from "../Menu/Menu"
 const NavBar = () => {
   return (
     <nav class="navbar navbar-expand-lg bg-dark">
@@ -12,7 +12,7 @@ const NavBar = () => {
           <Menu/>
         </div>
         <div class="nav-item">
-          <CartWidget />
+          <CartWidget/>
         </div>
 
       </div>

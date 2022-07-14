@@ -1,4 +1,4 @@
-import ItemCount from "./ItemCount"
+import ItemCount from "../Item/ItemCount"
 
 const ItemListContainer = ({ nombre }) => {
   
