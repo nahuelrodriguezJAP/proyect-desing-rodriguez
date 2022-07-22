@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom'
 import MenuIcon from '../img/menu.png'
 const Menu = () => {
     return (
@@ -8,9 +9,9 @@ const Menu = () => {
                     <img src={MenuIcon} alt="Menu"/>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><a class="dropdown-item" href="#">Productos</a></li>
-                    <li><a class="dropdown-item" href="#">Nosotros</a></li>
-                    <li><a class="dropdown-item" href="#">Contactenos</a></li>
+                    <li>L<Link to="/"><a class="dropdown-item" >Productos</a></Link></li>
+                    <li><Link to="/Nosotros"><a class="dropdown-item" >Nosotros</a></Link></li>
+                    <li><Link to="Contacto"><a class="dropdown-item" >Contactenos</a></Link></li>
                 </ul>
             </div></div>
     )
