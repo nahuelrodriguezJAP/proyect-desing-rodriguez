@@ -1,6 +1,6 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import ItemCount from './ItemCount';
+import { Link } from 'react-router-dom';
 
 const Item = ({ dato }) => {
   return (<Card style={{ width: '18rem' }}>
@@ -9,12 +9,13 @@ const Item = ({ dato }) => {
       <Card.Title>{dato.nombre}</Card.Title>
       <Card.Text>Categoria  {dato.categoria} <br/>
         Precio {dato.precio}<br />
-        <ItemCount stock={10} inicial={1} />
+        
       </Card.Text>
-      <Button variant="primary">Comprar</Button>
+      <Link to={`/detalle/${dato.dato.id}`}>
+      <Button variant="primary">Ver Detalle</Button>
+      </Link>
     </Card.Body>
   </Card>
-
   )
 }
 

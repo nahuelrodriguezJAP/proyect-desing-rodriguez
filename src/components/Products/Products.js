@@ -2,9 +2,8 @@ import { useEffect, useState } from "react"
 import Item from "../Item/Item";
 
 const Products = () => {
-
+  
   const [productos, setProductos] = useState([]);
-
   useEffect(() => {
     fetch('https://nahuelrodriguezjap.github.io/e-mercado/JSOn/Productos.json')
       .then(response => response.json())
@@ -14,7 +13,7 @@ const Products = () => {
   return (
     <div>{
       productos.map((product) => (
-        <div key={product.img}>
+        <div key={product.id}>
           <Item dato={product} />
         </div>))}
     </div>
