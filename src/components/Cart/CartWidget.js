@@ -4,7 +4,7 @@ import Style from '../Cart/CartWidget.css'
 
 const CartWidget = () => {
   return (
-    <div><button class='btn'><img style={Style} src={CartIcon}/></button></div>
+    <button class='btn'><img style={Style} src={CartIcon} alt="Cart"/></button>
   )
 }
 

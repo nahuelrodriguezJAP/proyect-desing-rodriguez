@@ -9,9 +9,9 @@ const Menu = () => {
                     <img src={MenuIcon} alt="Menu"/>
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li>L<Link to="/"><a class="dropdown-item" >Productos</a></Link></li>
+                    <li><Link to="/Categorias"><a class="dropdown-item" >Categorías</a></Link></li>
                     <li><Link to="/Nosotros"><a class="dropdown-item" >Nosotros</a></Link></li>
-                    <li><Link to="Contacto"><a class="dropdown-item" >Contactenos</a></Link></li>
+                    <li><Link to="/Contacto"><a class="dropdown-item" >Contactenos</a></Link></li>
                 </ul>
             </div></div>
     )

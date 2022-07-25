@@ -1,10 +1,11 @@
+import Row  from 'react-bootstrap/Row'
 import Products from "../Products/Products"
 
 
-const ItemListContainer = ({ nombre }) => {
+const ItemListContainer = () => {
 
  
-  return <div class="row justify-content-center">TITULO DE ITEM= {nombre}<br/><Products/></div>
+  return <Row className="justify-content-md-center">TITULO DE ITEM= <br/><Products/></Row>
 }
 
 
