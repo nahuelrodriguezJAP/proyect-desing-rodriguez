@@ -2,16 +2,15 @@ import ItemCount from "../Item/ItemCount"
 
 const ItemDetail = (dato) => {
   return (
-    <div class="container">
-        <div class="row">
+    <div >
+        <div >
             <h3>{dato.dato.nombre}</h3>
         </div>
-        {console.log(dato.dato.img)}
-        <div class="row">
-            <div class="col-7"><img src={dato.dato.img} alt="img" width="100%" height="100%"/></div>
-            <div class="col-4"><div class="row"></div><div class="row">{dato.dato.detalle}{dato.dato.precio}
+        <div >
+            <div><img src={`${dato.dato.img}`} alt="img" width="30rem" height="30rem"/></div>
+            <div><div class="row"></div><div class="row">{dato.dato.detalle}{dato.dato.precio}
             <br/>
-            <ItemCount stock={10} inicial={1} />
+            <ItemCount stock={dato.dato.stock} inicial={1} />
             </div></div>
         </div>
       </div>

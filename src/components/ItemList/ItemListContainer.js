@@ -1,11 +1,11 @@
 import Row  from 'react-bootstrap/Row'
-import Products from "../Products/Products"
+import Item from '../Item/Item'
 
 
 const ItemListContainer = () => {
 
  
-  return <Row className="justify-content-md-center">TITULO DE ITEM= <br/><Products/></Row>
+  return <Row className="justify-content-md-center"><Item/></Row>
 }
 
 
