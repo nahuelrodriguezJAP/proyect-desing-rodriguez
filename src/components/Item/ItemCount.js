@@ -1,10 +1,10 @@
 import { useState } from "react"
-import { Button } from "react-bootstrap"
+import { Button, ButtonGroup } from "react-bootstrap"
 
 
-const ItemCount = ({stock, inicial}) => {
+const ItemCount = ({ stock, inicial }) => {
     const [count, modificar] = useState(inicial)
-    
+
 
     const aumentar = () => {
         if (count < stock) {
@@ -18,11 +18,13 @@ const ItemCount = ({stock, inicial}) => {
 
     }
     return (
-        <div className="col-5 align-self-center">
-            {count}
-            <Button  onClick={aumentar}/>
-            <Button onClick={disminuir}>-  </Button><br/>
-            <Button>Agregar al Carrito</Button><span>Stock Disponible{stock}</span>
+        <div>
+            <ButtonGroup aria-label="Basic example">
+                <Button variant='secondary' onClick={aumentar}>+</Button>
+                <Button variant='secondary' onClick={disminuir}>- </Button> <br />
+            </ButtonGroup><hr />
+            <Button variant='secondary'>Agregar al Carrito</Button><br/>
+                <span style={{ width: '18rem' }}> Stock Disponible: <strong>{stock}</strong></span>
         </div>
     )
 }

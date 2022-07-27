@@ -15,7 +15,7 @@ const ItemDetailContainer = () => {
   useEffect(() => { getFecht() }, [])
   return (
     <div>{detalle.map((det) => (
-      <div key={det.id} class="col-4">
+      <div key={det.id} >
         <ItemDetail dato={det} />
       </div>)
     )}</div>

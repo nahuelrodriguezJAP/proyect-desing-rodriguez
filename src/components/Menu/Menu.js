@@ -1,19 +1,47 @@
 
+import { Button, ButtonGroup, Dropdown } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import MenuIcon from '../img/menu.png'
 const Menu = () => {
     return (
         <div>
-        <div class="dropdown">
-                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="true">
-                    <img src={MenuIcon} alt="Menu"/>
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                    <li><Link to="/Categorias"><a class="dropdown-item" >Categorías</a></Link></li>
-                    <li><Link to="/Nosotros"><a class="dropdown-item" >Nosotros</a></Link></li>
-                    <li><Link to="/Contacto"><a class="dropdown-item" >Contactenos</a></Link></li>
-                </ul>
-            </div></div>
+            <ButtonGroup>
+            <Button variant="outline-light">Nosotros</Button>
+                <Button variant="outline-light">
+                    <Dropdown>
+                        <Dropdown.Toggle variant="outline-light" id="dropdown-basic">
+                            Categorías
+                        </Dropdown.Toggle>
+
+                        <Dropdown.Menu>
+                            <Dropdown.Item >
+                                <Link to={`/Categoria/Living`}>
+                                    <Button variant="outline-secondary" >Living</Button>
+                                </Link>
+                            </Dropdown.Item>
+                            <Dropdown.Item >
+                                <Link to={`/Categoria/Cocina`}>
+                                    <Button variant="outline-secondary" >Cocina</Button>
+                                </Link>
+
+                            </Dropdown.Item>
+                            <Dropdown.Item >
+                                <Link to={`/Categoria/Baño`}>
+                                    <Button variant="outline-secondary" >Baño</Button>
+                                </Link>
+
+                            </Dropdown.Item>
+                            <Dropdown.Item >
+                                <Link to={`/Categoria/Dormitorio`}>
+                                    <Button variant="outline-secondary">Dormitorio</Button>
+                                </Link>
+
+                            </Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
+                </Button>
+                <Button variant="outline-light">Contactenos</Button>
+            </ButtonGroup>
+        </div>
     )
 }
 
