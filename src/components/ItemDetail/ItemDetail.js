@@ -1,4 +1,4 @@
-import ItemCount from "../Item/ItemCount"
+import Intercambiabilidad from "./Intercambiabilidad"
 
 
 import { Card, Row, Col } from "react-bootstrap"
@@ -16,7 +16,7 @@ const ItemDetail = (dato) => {
             <Card.Text>{dato.dato.detalle}<br/>
             {dato.dato.precio}
               <br />
-              <ItemCount stock={dato.dato.stock} inicial={1} />
+              <Intercambiabilidad stock={dato.dato.stock}/>
             </Card.Text>
           </Card.Body>
         </Card>

@@ -2,7 +2,7 @@ import { useState } from "react"
 import { Button, ButtonGroup } from "react-bootstrap"
 
 
-const ItemCount = ({ stock, inicial }) => {
+const ItemCount = ({ stock, inicial, handleInterc}) => {
     const [count, modificar] = useState(inicial)
 
 
@@ -23,7 +23,7 @@ const ItemCount = ({ stock, inicial }) => {
                 <Button variant='secondary' onClick={aumentar}>+</Button>
                 <Button variant='secondary' onClick={disminuir}>- </Button> <br />
             </ButtonGroup><hr />
-            <Button variant='secondary'>Agregar al Carrito</Button><br/>
+            <button className="btn btn-secondary" onClick={handleInterc}>Agregar al Carrito</button><br/>
                 <span style={{ width: '18rem' }}> Stock Disponible: <strong>{stock}</strong></span>
         </div>
     )
