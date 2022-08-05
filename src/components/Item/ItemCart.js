@@ -5,12 +5,12 @@ const ItemCart = () => {
     return (
         <div>
             <div><Link to={'/'}>
-                <imput>Seguir Comprando</imput>
+                Seguir Comprando
                 </Link>
             </div>
             <div>
                 <Link to={'/Cart'}>
-                    <imput>Ir Al Carrito</imput>
+                    Ir Al Carrito
                 </Link>
 
             </div>

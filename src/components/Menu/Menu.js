@@ -5,7 +5,7 @@ const Menu = () => {
     return (
         <div>
             <ButtonGroup>
-            <Button variant="outline-light">Nosotros</Button>
+                <Button variant="outline-light">Nosotros</Button>
                 <Button variant="outline-light">
                     <Dropdown>
                         <Dropdown.Toggle variant="outline-light" id="dropdown-basic">
@@ -15,24 +15,24 @@ const Menu = () => {
                         <Dropdown.Menu>
                             <Dropdown.Item >
                                 <Link to={`/Categoria/Living`}>
-                                    <Button variant="outline-secondary" >Living</Button>
+                                    Living
                                 </Link>
                             </Dropdown.Item>
                             <Dropdown.Item >
-                                <Link to={`/Categoria/Cocina`}>
-                                    <Button variant="outline-secondary" >Cocina</Button>
+                                <Link to={`/Categoria/Cocina`} >
+                                    Cocina
                                 </Link>
 
                             </Dropdown.Item>
                             <Dropdown.Item >
                                 <Link to={`/Categoria/Baño`}>
-                                    <Button variant="outline-secondary" >Baño</Button>
+                                    Baño
                                 </Link>
 
                             </Dropdown.Item>
                             <Dropdown.Item >
                                 <Link to={`/Categoria/Dormitorio`}>
-                                    <Button variant="outline-secondary">Dormitorio</Button>
+                                    Dormitorio
                                 </Link>
 
                             </Dropdown.Item>

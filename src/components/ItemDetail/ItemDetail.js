@@ -1,22 +1,23 @@
-import Intercambiabilidad from "./Intercambiabilidad"
 
+import Intercambiabilidad from "./Intercambiabilidad"
 
 import { Card, Row, Col } from "react-bootstrap"
 
-const ItemDetail = (dato) => {
+const ItemDetail = ({ dato, inicial }) => {
+  console.log(dato)
   return (
     <Row>
       <Col>
-        <Card.Img variant="top" src={`${dato.dato.img}`} alt="img" style={{ width: "30rem", height: "30rem" }} />
+        <Card.Img style={{ width: '18rem', height: '18rem' }} src={dato.img} />
       </Col>
       <Col>
-        <Card>
-          <Card.Title>{dato.dato.nombre}</Card.Title>
+        <Card style={{ width: '28rem' }}>
           <Card.Body>
-            <Card.Text>{dato.dato.detalle}<br/>
-            {dato.dato.precio}
+            <Card.Title>{dato.nombre}</Card.Title>
+            <Card.Text>{dato.detalle}<br />
+              {dato.precio}
               <br />
-              <Intercambiabilidad stock={dato.dato.stock}/>
+              <Intercambiabilidad dato={dato} inicial={inicial} />
             </Card.Text>
           </Card.Body>
         </Card>

@@ -4,7 +4,7 @@ import CartWidget from "../Cart/CartWidget"
 import Menu from "../Menu/Menu"
 
 
-import { Link, NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { Button } from "react-bootstrap"
 
 const NavBar = () => {
@@ -20,9 +20,9 @@ const NavBar = () => {
           <Menu />
         </div>
         <div class="nav-item">
-          <NavLink to={`/cart`} >
+          <Link to='/Cart' >
             <CartWidget />
-          </NavLink>
+          </Link>
         </div>
 
       </div>

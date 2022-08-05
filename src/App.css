@@ -1,7 +1,12 @@
 .App{
     background: url('https://img.freepik.com/foto-gratis/herramientas-bricolaje_144627-32159.jpg?w=2000');
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-attachment: fixed;
     
+}
+.col {
+    margin:10px;
+    padding: 10px;
+    left:1px
 }

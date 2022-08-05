@@ -29,7 +29,7 @@ const Item = () => {
   }, [categoryId])
 
   return (
-    <Row>{
+    <Row md="justify-content-start">{
       productos.map((product) => (
         <Col>
           <div key={product.id}>
